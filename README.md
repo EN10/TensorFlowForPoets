@@ -43,3 +43,6 @@ codenvy.io  3072MB RAM
 ## Improve Performance:
 
 [FMA, AVX, AVX2, SSE4.1, SSE4.2](https://github.com/lakshayg/tensorflow-build)
+
+    wget -c https://github.com/lakshayg/tensorflow-build/raw/master/tensorflow-1.2.0rc1-cp27-cp27mu-linux_x86_64.whl
+    sudo pip install --ignore-installed --upgrade tensorflow-1.2.0rc1-cp27-cp27mu-linux_x86_64.whl
