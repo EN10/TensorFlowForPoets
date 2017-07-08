@@ -40,6 +40,6 @@ codenvy.io  3072MB RAM
 5m45s   Bottlenecks  
 1m      Training    
 
-# Improve Performance:
+## Improve Performance:
 
 [FMA, AVX, AVX2, SSE4.1, SSE4.2](https://github.com/lakshayg/tensorflow-build)
