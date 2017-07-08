@@ -46,3 +46,7 @@ codenvy.io  3072MB RAM
 
     wget -c https://github.com/lakshayg/tensorflow-build/raw/master/tensorflow-1.2.0rc1-cp27-cp27mu-linux_x86_64.whl
     sudo pip install --ignore-installed --upgrade tensorflow-1.2.0rc1-cp27-cp27mu-linux_x86_64.whl
+    
+codenvy.io  2048MB RAM  same as 3072MB RAM  
+2m20s   Bottlenecks  
+1m      Training 
