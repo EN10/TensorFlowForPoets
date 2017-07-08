@@ -32,6 +32,7 @@ also only use 2 flowers e.g. roses and sunflowers
 
 * [Retrieving the images](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#3)  
 * [FMA, AVX, AVX2, SSE4.1, SSE4.2](https://github.com/lakshayg/tensorflow-build)
+* [Community wheels](https://github.com/yaroslavvb/tensorflow-community-wheels)
 
 ## Benchmarks:  
 pip Tensorflow:
