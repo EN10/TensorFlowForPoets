@@ -26,21 +26,6 @@ also only use 2 flowers e.g. roses and sunflowers
 
     python label_image.py flower_photos/roses/2414954629_3708a1a04d.jpg 
 
-## Benchmarks:  
-pip Tensorflow:
-cs50.io     512MB RAM   
-10m30s  Bottlenecks  
-1m      Training    
-
-codenvy.io  3072MB RAM  
-5m45s   Bottlenecks  
-1m      Training    
-
-Build supporting AVX, AVX2, FMA, SSE4.1, SSE4.2:  
-codenvy.io  2048MB RAM  same as 3072MB RAM  
-2m20s   Bottlenecks  
-1m      Training 
-
 ## Performance
 Precompiled with FMA, AVX, AVX2, SSE4.1, SSE4.2  
 Working on codenvy.io not on c9.io  
@@ -55,3 +40,18 @@ Precompiled bottlenecks also included as tgz.
 * [Retrieving the images](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#3)  
 * [FMA, AVX, AVX2, SSE4.1, SSE4.2](https://github.com/lakshayg/tensorflow-build)
 * [Community wheels](https://github.com/yaroslavvb/tensorflow-community-wheels)
+
+## Benchmarks:  
+pip Tensorflow:
+cs50.io     512MB RAM   
+10m30s  Bottlenecks  
+1m      Training    
+
+codenvy.io  3072MB RAM  
+5m45s   Bottlenecks  
+1m      Training    
+
+Build supporting AVX, AVX2, FMA, SSE4.1, SSE4.2:  
+codenvy.io  2048MB RAM  same as 3072MB RAM  
+2m20s   Bottlenecks  
+1m      Training 
