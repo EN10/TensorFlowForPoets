@@ -58,10 +58,10 @@ codenvy.io  2048MB RAM  same as 3072MB RAM
 
 ## Build from Source
 * [Docker Ubuntu](https://hub.docker.com/_/ubuntu/)
-* [Install from Source](https://www.tensorflow.org/install/install_sources#clone_the_tensorflow_repository)
 * [Install Bazel](https://docs.bazel.build/versions/master/install-ubuntu.html#install-with-installer-ubuntu)
+* [Build from Source](https://www.tensorflow.org/install/install_sources#clone_the_tensorflow_repository)
 * [Add SSE & AVX](https://stackoverflow.com/questions/41293077/how-to-compile-tensorflow-with-sse4-2-and-avx-instructions)
 
 Build:
 
-    bazel build -c opt --copt=-msse4.1 --copt=-msse4.2 --copt=-mavx --copt=-mavx2 --copt=-mfma //tensorflow/tools/pip_package:build_pip_package
+    bazel build -c opt --copt=-msse4.2 --copt=-mavx2 --copt=-mfma //tensorflow/tools/pip_package:build_pip_package
