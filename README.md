@@ -30,8 +30,7 @@ also only use 2 flowers e.g. roses and sunflowers
 Precompiled with FMA, AVX, AVX2, SSE4.1, SSE4.2  
 Working on codenvy.io not on c9.io  
 
-    wget -c https://github.com/lakshayg/tensorflow-build/raw/master/tensorflow-1.2.0rc1-cp27-cp27mu-linux_x86_64.whl
-    sudo pip install --ignore-installed --upgrade tensorflow-1.2.0rc1-cp27-cp27mu-linux_x86_64.whl
+    sudo pip install --ignore-installed --upgrade tensorflow-1.2.1-cp27-none-linux_x86_64.whl
     
 Precompiled bottlenecks also included as tgz.
 
