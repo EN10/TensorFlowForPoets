@@ -55,3 +55,9 @@ Build supporting AVX, AVX2, FMA, SSE4.1, SSE4.2:
 codenvy.io  2048MB RAM  same as 3072MB RAM  
 2m20s   Bottlenecks  
 1m      Training 
+
+## Build from Source
+* [Docker Ubuntu](https://hub.docker.com/_/ubuntu/)
+* [Install from Source](https://www.tensorflow.org/install/install_sources#clone_the_tensorflow_repository)
+* [Install Bazel](https://docs.bazel.build/versions/master/install-ubuntu.html#install-with-installer-ubuntu)
+* [Add SSE & AVX](https://stackoverflow.com/questions/41293077/how-to-compile-tensorflow-with-sse4-2-and-avx-instructions)
