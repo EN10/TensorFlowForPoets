@@ -10,12 +10,15 @@
     curl -O http://download.tensorflow.org/example_images/flower_photos.tgz
     tar xzf flower_photos.tgz
 
+* [Retrieving the images](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#3)  
+
 ## Speedup Training 
 reduce the number of images by 70%    
 
     ls flower_photos/roses | wc -l
     rm flower_photos/*/[3-9]*
-also only use 2 flowers e.g. roses and sunflowers
+also only use 2 flowers e.g. roses and sunflowers  
+Precompiled bottlenecks also included as tgz.
 
 ## Training
 
@@ -28,18 +31,12 @@ also only use 2 flowers e.g. roses and sunflowers
 
 ## Performance
 Precompiled with FMA, AVX, AVX2, SSE4.1, SSE4.2  
+* [FMA, AVX, AVX2, SSE4.1, SSE4.2](https://github.com/lakshayg/tensorflow-build)  
 Working on codenvy.io not on c9.io  
+
 
     sudo pip install --ignore-installed --upgrade tensorflow-1.2.1-cp27-none-linux_x86_64.whl
     
-Precompiled bottlenecks also included as tgz.
-
-## Reference
-
-* [Retrieving the images](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#3)  
-* [FMA, AVX, AVX2, SSE4.1, SSE4.2](https://github.com/lakshayg/tensorflow-build)
-* [Community wheels](https://github.com/yaroslavvb/tensorflow-community-wheels)
-
 ## Benchmarks:  
 pip Tensorflow:
 cs50.io     512MB RAM   
