@@ -63,4 +63,4 @@ codenvy.io  2048MB RAM  same as 3072MB RAM
 
 Build:
 
-    bazel build -c opt --copt=-msse4.2 --copt=-mavx2 --copt=-mfma //tensorflow/tools/pip_package:build_pip_package
+    bazel build --config=opt --copt=-msse4.2 --copt=-mavx2 --copt=-mfma //tensorflow/tools/pip_package:build_pip_package
