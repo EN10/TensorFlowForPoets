@@ -36,7 +36,9 @@ Working on codenvy.io not on c9.io
 
 
     sudo pip install --ignore-installed --upgrade tensorflow-1.2.1-cp27-none-linux_x86_64.whl
-    
+
+OS: Ubuntu 14.04.5 LTS - GCC version 4.8.4 - Python: 2.7.6 - Tensorflow 1.2.1
+
 ## Benchmarks:  
 pip Tensorflow:
 cs50.io     512MB RAM   
