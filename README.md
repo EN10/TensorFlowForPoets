@@ -40,7 +40,7 @@ OS: Ubuntu 14.04.5 LTS - GCC version 4.8.4 - Python: 2.7.6 - Tensorflow 1.2.1
 
 ## Benchmarks:  
 pip Tensorflow:
-cs50.io     512MB RAM   
+cs50.io     512MB RAM   2 Flowers Slim     
 10m30s  Bottlenecks  
 1m      Training    
 
@@ -52,6 +52,10 @@ Build supporting AVX, AVX2, FMA, SSE4.1, SSE4.2:
 codenvy.io  2048MB RAM  same as 3072MB RAM  
 2m20s   Bottlenecks  
 1m      Training 
+
+cs50.io     512MB RAM   2 Flowers Slim with Compiled Tensorflow  
+5m30s  Bottlenecks  282 Roses + 304 Sunflower  
+1m      Training    
 
 ## Build from Source
 * [Docker Ubuntu](https://hub.docker.com/_/ubuntu/)
