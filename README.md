@@ -45,7 +45,7 @@ OR
 ## Training on Your Own Categories
 
 * [Training on Your Own Categories](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#7)  
-
+* [Image Batch Downloader](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en)
 
 ## Performance
 Precompiled with FMA, AVX, AVX2, SSE4.1, SSE4.2:  
