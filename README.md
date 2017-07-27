@@ -25,9 +25,27 @@ Precompiled bottlenecks also included as tgz.
     tensorboard --logdir training_summaries --port 8080 &
     python retrain.py   --bottleneck_dir=bottlenecks   --how_many_training_steps=500   --model_dir=inception  --summaries_dir=training_summaries/basic   --output_graph=retrained_graph.pb   --output_labels=retrained_labels.txt   --image_dir=flower_photos
 
+OR
+
+    python retrain.py \
+    --bottleneck_dir=bottlenecks \
+    --how_many_training_steps=500 \
+    --model_dir=inception \
+    --summaries_dir=training_summaries/basic \
+    --output_graph=retrained_graph.pb \
+    --output_labels=retrained_labels.txt \
+    --image_dir=flower_photos
+
+* [(Re)training Inception](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#4)  
+
 ## Classifying an image
 
-    python label_image.py flower_photos/roses/2414954629_3708a1a04d.jpg 
+    python label_image.py image.jpg 
+
+## Training on Your Own Categories
+
+* [Training on Your Own Categories](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#7)  
+
 
 ## Performance
 Precompiled with FMA, AVX, AVX2, SSE4.1, SSE4.2:  
