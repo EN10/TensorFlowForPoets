@@ -44,7 +44,14 @@ OR
 
 ## Training on Your Own Categories
 
+`retrain.py` uses `--image_dir` as the root folder for training.  
+Each sub-folder is named after one of your categories and contains only images from that category.  
 * [Training on Your Own Categories](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#7)  
+
+For training to work well, you should gather at least a hundred photos of each kind of object you want to recognize.  
+* [Creating a Set of Training Images](https://www.tensorflow.org/tutorials/image_retraining#creating_a_set_of_training_images)  
+
+Tool to download images for training:
 * [Image Batch Downloader](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en)
 
 ## Performance
