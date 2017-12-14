@@ -57,7 +57,7 @@ Tool to download images for training:
 ## Performance
 Precompiled with FMA, AVX, AVX2, SSE4.1, SSE4.2:  
 * [FMA, AVX, AVX2, SSE4.1, SSE4.2](https://github.com/lakshayg/tensorflow-build) Working on codenvy.io not on c9.io  
-* [SSE4.2 & AVX2](https://github.com/EN10/TensorFlow-For-Poets/raw/d1a2540ae774f1da6dbafc3388463e9f7d43ab18/tensorflow-1.2.1-cp27-none-linux_x86_64.whl)
+* [Precompiled for 14.04](https://github.com/EN10/KerasCIFAR#performance)
 
 `sudo pip install --ignore-installed --upgrade tensorflow-1.2.1-cp27-none-linux_x86_64.whl`
 
