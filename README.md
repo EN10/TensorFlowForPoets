@@ -1,5 +1,8 @@
 # TensorFlow For Poets
 
+Retraining Google's Inception model to new categories using Transfer Learning.  
+This can be an much faster (in 5-30 minutes) than training from scratch (took google 2 weeks).
+
 ## Install Tensorflow:
 
     sudo pip install -U pip  
