@@ -73,7 +73,7 @@ Tool to download images for training:
 * [Image Batch Downloader](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en)
 
 ## Benchmarks:  
-`rm [3-9]*` & 2 Flowers: roses and sunflowers     
+`rm [3-9]*` & 2 Flowers: roses and sunflowers (aka slim)    
 282 roses & 304 sunfowers i.e. 586 bottlenecks
 
 | Model | PAAS | RAM | OS | Tensorflow | CPU | Performance |
@@ -89,6 +89,8 @@ Tool to download images for training:
 Performance = Bottlenecks + Training where Training ~ 1 Min
 
 CPU: `TensorFlow binary compiled to use: SSE4.1 SSE4.2 AVX`
+
+Precompiled Bottlenecks in /inception_bottlenecks (slim see above)
 
 ## Performance
 Precompiled with FMA, AVX, AVX2, SSE4.1, SSE4.2:  
