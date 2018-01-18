@@ -56,7 +56,7 @@ Precompiled bottlenecks also included as tgz.
 
     python label_image.py \
     --graph=tf_files/retrained_graph.pb  \
-    --image=tf_files/image.jpg
+    --image=image.jpg
 
 * [Label Image](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#4)  
 
