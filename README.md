@@ -1,7 +1,7 @@
 # TensorFlow For Poets
 
-Retraining one Google's CNN image classification models to new categories using Transfer Learning.  
-This can be an much faster (in a few minutes) than training from scratch (Inception V3 took google 2 weeks).
+Retraining one of Google's CNN image classification models to new categories using Transfer Learning.  
+This can be an much faster (in a few minutes) than training from scratch (Inception V3 took Google 2 weeks).
 
 ## Install Tensorflow:
 
@@ -10,6 +10,8 @@ This can be an much faster (in a few minutes) than training from scratch (Incept
 
 ## Download Flowers:
     
+    mkdir tf_files
+    cd tf_files
     curl -O http://download.tensorflow.org/example_images/flower_photos.tgz
     tar xzf flower_photos.tgz
 
