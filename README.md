@@ -57,8 +57,23 @@ For training to work well, you should gather at least a hundred photos of each k
 Tool to download images for training:
 * [Image Batch Downloader](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en)
 
+## Benchmarks:  
+`rm [3-9]*` & 2 Flowers: roses and sunflowers     
+
+| Provider | RAM | OS | Tensorflow | CPU | Performance |
+| ------ | ------ | ------ | ------ | ------ | ------ |  
+| cs50.io  | 512MB | 14.04.5 | 1.2.1 | Not Compiled | 11m30s |
+| cs50.io  | 512MB | 14.04.5 | 1.2.1 | Compiled | 6m30s |
+| codenvy.io  | 3072MB | 16.04 | 1.2.1 | Not Compiled | 6m45s |
+| codenvy.io  | 3072MB | 16.04 | 1.2.1 | Compiled | 3m20s |
+| codenvy.io  | 2048MB | 16.04 | 1.2.1 | Compiled | 3m20s |
+
+Performance = Bottlenecks + Training where Training ~ 1 Min
+
 ## Performance
 Precompiled with FMA, AVX, AVX2, SSE4.1, SSE4.2:  
+* [FloydHub](https://github.com/EN10/FloydHub)
+
 * [FMA, AVX, AVX2, SSE4.1, SSE4.2](https://github.com/lakshayg/tensorflow-build) Working on codenvy.io not on c9.io  
 * [Precompiled for 14.04](https://github.com/EN10/KerasCIFAR#performance)
 
@@ -67,25 +82,6 @@ Precompiled with FMA, AVX, AVX2, SSE4.1, SSE4.2:
     sudo pip install --ignore-installed --upgrade tensorflow-1.4.0-cp27-none-linux_x86_64.whl  
     
 OS: Ubuntu 14.04.5 LTS - GCC version 4.8.4 - Python: 2.7.6 - Tensorflow 1.2.1
-
-## Benchmarks:  
-pip Tensorflow:
-cs50.io     512MB RAM   2 Flowers Slim     
-10m30s  Bottlenecks  
-1m      Training    
-
-codenvy.io  3072MB RAM  
-5m45s   Bottlenecks  
-1m      Training    
-
-Build supporting AVX, AVX2, FMA, SSE4.1, SSE4.2:  
-codenvy.io  2048MB RAM  same as 3072MB RAM  
-2m20s   Bottlenecks  
-1m      Training 
-
-cs50.io     512MB RAM   2 Flowers Slim with Compiled Tensorflow  
-5m30s  Bottlenecks  282 Roses + 304 Sunflower  
-1m      Training    
 
 ## Build from Source
 * [Docker Ubuntu](https://hub.docker.com/_/ubuntu/)
