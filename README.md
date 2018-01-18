@@ -86,11 +86,9 @@ Tool to download images for training:
 | Inception v3 | codenvy.io  | 3072MB | 16.04 | 1.2.1 | Compiled | 3m20s |
 | Inception v3 | codenvy.io  | 2048MB | 16.04 | 1.2.1 | Compiled | 3m20s |
 
-Performance = Bottlenecks + Training where Training ~ 1 Min
-
-CPU: `TensorFlow binary compiled to use: SSE4.1 SSE4.2 AVX`
-
-Precompiled Bottlenecks in /inception_bottlenecks (slim see above)
+Performance = Bottlenecks + Training where Training ~ 1 Min     
+CPU: `TensorFlow binary compiled to use: SSE4.1 SSE4.2 AVX`     
+Precompiled Bottlenecks in `/inception_bottlenecks` (slim see above)
 
 ## Performance
 Precompiled with FMA, AVX, AVX2, SSE4.1, SSE4.2:  
