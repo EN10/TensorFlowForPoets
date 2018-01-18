@@ -40,6 +40,8 @@ Precompiled bottlenecks also included as tgz.
       --architecture=mobilenet_0.50_224 \
       --image_dir=tf_files/flower_photos
 
+`mobilenet` can be configured from `0.50` to `1.0`, more accuracy but slower.
+
 **Inception V3**:   Slower (5 - 20m) More Accurate (Top-1 78%)
 
     python retrain.py \
