@@ -22,8 +22,8 @@ Based on [Codelab](https://codelabs.developers.google.com/codelabs/tensorflow-fo
 ## Speedup Training 
 reduce the number of images by ~70%    
 
-    ls flower_photos/roses | wc -l
-    rm flower_photos/*/[3-9]*
+    ls tf_files/flower_photos/roses | wc -l
+    rm tf_files/flower_photos/*/[3-9]*
 also only use 2 flowers e.g. roses and sunflowers  
 Precompiled bottlenecks also included as tgz.
 
