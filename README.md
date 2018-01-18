@@ -28,6 +28,11 @@ also only use 2 flowers e.g. roses and sunflowers
 Precompiled bottlenecks also included as tgz.
 
 ## (Re)Training
+
+Download retrain file:
+    
+    wget https://raw.githubusercontent.com/EN10/TensorFlow-For-Poets/master/retrain.py
+
 **MobileNet 0.5**:  Faster (< 2m) Less Accurate (Top-1 64%)
 
     python retrain.py \
@@ -55,6 +60,12 @@ Precompiled bottlenecks also included as tgz.
 * [(Re)training Inception](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#3)  
 
 ## Classifying an image
+
+Download label_image file:
+
+    wget https://raw.githubusercontent.com/EN10/TensorFlow-For-Poets/master/label_image.py
+
+Predict image label:
 
     python label_image.py \
     --graph=tf_files/retrained_graph.pb  \
