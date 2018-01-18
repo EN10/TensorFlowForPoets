@@ -1,7 +1,9 @@
 # TensorFlow For Poets
 
 Retraining one of Google's CNN image classification models to new categories using Transfer Learning.  
-This can be an much faster (in a few minutes) than training from scratch (Inception V3 took Google 2 weeks).
+This can be an much faster (in a few minutes) than training from scratch (Inception V3 took Google, 2 weeks).
+
+Based on [Codelab](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html#0), updated Dec 6 2017
 
 ## Install Tensorflow:
 
@@ -15,7 +17,7 @@ This can be an much faster (in a few minutes) than training from scratch (Incept
     curl -O http://download.tensorflow.org/example_images/flower_photos.tgz
     tar xzf flower_photos.tgz
 
-* [Retrieving the images](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#3)  
+* [Retrieving the images](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#2)  
 
 ## Speedup Training 
 reduce the number of images by ~70%    
@@ -25,7 +27,7 @@ reduce the number of images by ~70%
 also only use 2 flowers e.g. roses and sunflowers  
 Precompiled bottlenecks also included as tgz.
 
-## Training
+## (Re)Training
 **MobileNet 0.5**:  Faster (< 2m) Less Accurate (Top-1 64%)
 
     python retrain.py \
@@ -48,13 +50,15 @@ Precompiled bottlenecks also included as tgz.
       --output_labels=tf_files/retrained_labels.txt \
       --image_dir=tf_files/flower_photos
 
-* [(Re)training Inception](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#4)  
+* [(Re)training Inception](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#3)  
 
 ## Classifying an image
 
     python label_image.py \
     --graph=tf_files/retrained_graph.pb  \
     --image=tf_files/image.jpg
+
+* [Label Image](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#4)  
 
 ## Training on Your Own Categories
 
