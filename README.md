@@ -1,7 +1,7 @@
 # TensorFlow For Poets
 
-Retraining Google's Inception model to new categories using Transfer Learning.  
-This can be an much faster (in 5-30 minutes) than training from scratch (took google 2 weeks).
+Retraining one Google's CNN image classification models to new categories using Transfer Learning.  
+This can be an much faster (in a few minutes) than training from scratch (Inception V3 took google 2 weeks).
 
 ## Install Tensorflow:
 
@@ -9,14 +9,14 @@ This can be an much faster (in 5-30 minutes) than training from scratch (took go
     sudo pip install tensorflow 
 
 ## Download Flowers:
-
+    
     curl -O http://download.tensorflow.org/example_images/flower_photos.tgz
     tar xzf flower_photos.tgz
 
 * [Retrieving the images](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#3)  
 
 ## Speedup Training 
-reduce the number of images by 70%    
+reduce the number of images by ~70%    
 
     ls flower_photos/roses | wc -l
     rm flower_photos/*/[3-9]*
@@ -24,26 +24,35 @@ also only use 2 flowers e.g. roses and sunflowers
 Precompiled bottlenecks also included as tgz.
 
 ## Training
-
-    tensorboard --logdir training_summaries --port 8080 &
-    python retrain.py   --bottleneck_dir=bottlenecks   --how_many_training_steps=500   --model_dir=inception  --summaries_dir=training_summaries/basic   --output_graph=retrained_graph.pb   --output_labels=retrained_labels.txt   --image_dir=flower_photos
-
-OR
+**MobileNet 0.5**:  Faster (< 2m) Less Accurate (Top-1 64%)
 
     python retrain.py \
-    --bottleneck_dir=bottlenecks \
-    --how_many_training_steps=500 \
-    --model_dir=inception \
-    --summaries_dir=training_summaries/basic \
-    --output_graph=retrained_graph.pb \
-    --output_labels=retrained_labels.txt \
-    --image_dir=flower_photos
+      --bottleneck_dir=tf_files/bottlenecks \
+      --how_many_training_steps=500 \   
+      --model_dir=tf_files/models/ \
+      --summaries_dir=tf_files/training_summaries/mobilenet_0.50_224 \
+      --output_graph=tf_files/retrained_graph.pb \
+      --output_labels=tf_files/retrained_labels.txt \
+      --architecture=mobilenet_0.50_224 \
+      --image_dir=tf_files/flower_photos
+
+**Inception V3**:   Slower (5 - 20m) More Accurate (Top-1 78%)
+
+    python retrain.py \
+      --bottleneck_dir=tf_files/bottlenecks \
+      --how_many_training_steps=500 \
+      --model_dir=tf_files/models/inception_v3 \
+      --output_graph=tf_files/retrained_graph.pb \
+      --output_labels=tf_files/retrained_labels.txt \
+      --image_dir=tf_files/flower_photos
 
 * [(Re)training Inception](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#4)  
 
 ## Classifying an image
 
-    python label_image.py image.jpg 
+    python label_image.py \
+    --graph=tf_files/retrained_graph.pb  \
+    --image=tf_files/image.jpg
 
 ## Training on Your Own Categories
 
@@ -59,16 +68,20 @@ Tool to download images for training:
 
 ## Benchmarks:  
 `rm [3-9]*` & 2 Flowers: roses and sunflowers     
+282 roses & 304 sunfowers i.e. 586 bottlenecks
 
-| Provider | RAM | OS | Tensorflow | CPU | Performance |
-| ------ | ------ | ------ | ------ | ------ | ------ |  
-| cs50.io  | 512MB | 14.04.5 | 1.2.1 | Not Compiled | 11m30s |
-| cs50.io  | 512MB | 14.04.5 | 1.2.1 | Compiled | 6m30s |
-| codenvy.io  | 3072MB | 16.04 | 1.2.1 | Not Compiled | 6m45s |
-| codenvy.io  | 3072MB | 16.04 | 1.2.1 | Compiled | 3m20s |
-| codenvy.io  | 2048MB | 16.04 | 1.2.1 | Compiled | 3m20s |
+| Model | PAAS | RAM | OS | Tensorflow | CPU | Performance |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- |  
+| MobileNet 0.5 | cs50.io  | 512MB | 14.04.5 | 1.4.1 | Not Compiled | 1m20s |
+| Inception v3 | cs50.io  | 512MB | 14.04.5 | 1.4.1 | Not Compiled | 15m |
+| Inception v3 | cs50.io  | 512MB | 14.04.5 | 1.2.1 | Compiled | 6m30s |
+| Inception v3 | codenvy.io  | 3072MB | 16.04 | 1.2.1 | Not Compiled | 6m45s |
+| Inception v3 | codenvy.io  | 3072MB | 16.04 | 1.2.1 | Compiled | 3m20s |
+| Inception v3 | codenvy.io  | 2048MB | 16.04 | 1.2.1 | Compiled | 3m20s |
 
 Performance = Bottlenecks + Training where Training ~ 1 Min
+
+CPU: `TensorFlow binary compiled to use: SSE4.1 SSE4.2 AVX`
 
 ## Performance
 Precompiled with FMA, AVX, AVX2, SSE4.1, SSE4.2:  
