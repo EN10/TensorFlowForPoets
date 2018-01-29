@@ -27,6 +27,9 @@ reduce the number of images by ~70%
 also only use 2 flowers e.g. roses and sunflowers  
 Precompiled bottlenecks also included as tgz.
 
+* [Floydhub](https://github.com/EN10/FloydHub) [run.sh](https://github.com/EN10/TensorFlowForPoets/blob/master/run.sh) 
+Intel Xeon® · 2 Cores   8 GB RAM
+
 ## (Re)Training
 
 Download retrain file:
@@ -96,6 +99,7 @@ Tool to download images for training:
 | Inception v3 | cs50.io  | 512MB | 14.04.5 | 1.4.1 | Not Compiled | 15m | |
 | Inception v3 | cs50.io  | 512MB | 14.04.5 | 1.2.1 | Compiled | 6m30s | |
 | Inception v3 | floydhub  | 8GB | 16.04.2 | 1.1.0 | Compiled | 4m30s | with install |
+| Inception v3 | floydhub  | 8GB | 16.04.2 | 1.1.0 | Compiled | 4m | with datasets |
 | Inception v3 | codenvy.io  | 3072MB | 16.04 | 1.2.1 | Not Compiled | 6m45s | |
 | Inception v3 | codenvy.io  | 3072MB | 16.04 | 1.2.1 | Compiled | 3m20s | |
 | Inception v3 | codenvy.io  | 2048MB | 16.04 | 1.2.1 | Compiled | 3m20s | |
