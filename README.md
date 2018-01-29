@@ -95,6 +95,7 @@ Tool to download images for training:
 | MobileNet 0.5 | cs50.io  | 1024MB | 14.04.5 | 1.4.1 | Not Compiled | 1m20s |
 | Inception v3 | cs50.io  | 512MB | 14.04.5 | 1.4.1 | Not Compiled | 15m |
 | Inception v3 | cs50.io  | 512MB | 14.04.5 | 1.2.1 | Compiled | 6m30s |
+| Inception v3 | floydhub  | 8GB | 16.04.2 | 1.1.0 | Compiled | 4m30s | with install
 | Inception v3 | codenvy.io  | 3072MB | 16.04 | 1.2.1 | Not Compiled | 6m45s |
 | Inception v3 | codenvy.io  | 3072MB | 16.04 | 1.2.1 | Compiled | 3m20s |
 | Inception v3 | codenvy.io  | 2048MB | 16.04 | 1.2.1 | Compiled | 3m20s |
