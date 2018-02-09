@@ -3,7 +3,7 @@
 Retraining one of Google's CNN image classification models to new categories using Transfer Learning.  
 This can be an much faster (in a few minutes) than training from scratch (Inception V3 took Google, 2 weeks).
 
-Based on [Codelab](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html#0), updated Dec 6 2017
+Based on [Tensorflow Retrain](https://www.tensorflow.org/versions/master/tutorials/image_retraining) and [Codelab](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html#0) (updated Dec 6 2017)
 
 ## Install Tensorflow:
 
@@ -22,9 +22,12 @@ Based on [Codelab](https://codelabs.developers.google.com/codelabs/tensorflow-fo
 ## Speedup Training 
 reduce the number of images by ~70%    
 
-    ls tf_files/flower_photos/roses | wc -l
-    rm tf_files/flower_photos/*/[3-9]*
+    ls flower_photos/roses | wc -l
+    rm flower_photos/*/[3-9]*
 also only use 2 flowers e.g. roses and sunflowers  
+
+    rm flower_photos/daisy/ flower_photos/dandelion/ flower_photos/tulips/ -r
+
 Precompiled bottlenecks also included as tgz.
 
 * [Floydhub](https://github.com/EN10/FloydHub) [run.sh](https://github.com/EN10/TensorFlowForPoets/blob/master/run.sh) 
