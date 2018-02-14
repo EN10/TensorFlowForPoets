@@ -33,6 +33,12 @@ Precompiled bottlenecks also included as tgz.
 * [Floydhub](https://github.com/EN10/FloydHub) [run.sh](https://github.com/EN10/TensorFlowForPoets/blob/master/run.sh) 
 Intel Xeon® · 2 Cores   8 GB RAM
 
+* colab K80 12GB [colab.sh](https://github.com/EN10/TensorFlowForPoets/blob/master/colab.sh)
+
+
+    !wget https://raw.githubusercontent.com/EN10/TensorFlowForPoets/master/colab.sh
+    !bash colab.sh
+
 ## (Re)Training
 
 Download retrain file:
