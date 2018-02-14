@@ -28,12 +28,9 @@ also only use 2 flowers e.g. roses and sunflowers
 
     rm flower_photos/daisy/ flower_photos/dandelion/ flower_photos/tulips/ -r
 
-Precompiled bottlenecks also included as tgz.
-
-* [Floydhub](https://github.com/EN10/FloydHub) [run.sh](https://github.com/EN10/TensorFlowForPoets/blob/master/run.sh) 
-Intel Xeon® · 2 Cores   8 GB RAM
-
-**colab** K80 12GB [colab.sh](https://github.com/EN10/TensorFlowForPoets/blob/master/colab.sh)
+* Precompiled bottlenecks also included as tgz.
+* **[Floydhub](https://github.com/EN10/FloydHub)** [run.sh](https://github.com/EN10/TensorFlowForPoets/blob/master/run.sh) *Intel Xeon® · 2 Cores   8 GB RAM*
+* **colab** (See Below) *K80 12GB* [colab.sh](https://github.com/EN10/TensorFlowForPoets/blob/master/colab.sh)
 
 
     !wget https://raw.githubusercontent.com/EN10/TensorFlowForPoets/master/colab.sh
