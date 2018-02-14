@@ -112,7 +112,7 @@ Tool to download images for training:
 | Inception v3 | codenvy.io  | 3072MB | 16.04 | 1.2.1 | Not Compiled | 6m45s | |
 | Inception v3 | codenvy.io  | 3072MB | 16.04 | 1.2.1 | Compiled | 3m20s | |
 | Inception v3 | codenvy.io  | 2048MB | 16.04 | 1.2.1 | Compiled | 3m20s | |
-| Inception v3 | colab | 1024MB | 17.10 | 1.6.0rc1 | Compiled | 3m41s | |
+| Inception v3 | colab | 1024MB | 17.10 | 1.6.0rc1 | Compiled | 3m38s | |
 | Inception v3 | colab | 12GB | 17.10 | 1.6.0rc1 | K80 | 1m23s | |
 
 Performance = Bottlenecks + Training where Training ~ 1 Min     
