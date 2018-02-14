@@ -119,7 +119,7 @@ Performance = Bottlenecks + Training where Training ~ 1 Min
 CPU: `TensorFlow binary compiled to use: SSE4.1 SSE4.2 AVX`     
 Precompiled Bottlenecks in `/inception_bottlenecks` (slim see above)
 
-## Performance
+## Compiled
 Precompiled with FMA, AVX, AVX2, SSE4.1, SSE4.2:  
 * [FloydHub EN10](https://github.com/EN10/FloydHub)
 
