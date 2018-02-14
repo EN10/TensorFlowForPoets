@@ -99,6 +99,7 @@ Tool to download images for training:
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
 | MobileNet 0.5 | cs50.io  | 512MB | 14.04.5 | 1.4.1 | Not Compiled | 1m20s | |
 | MobileNet 0.5 | cs50.io  | 1024MB | 14.04.5 | 1.4.1 | Not Compiled | 1m20s | |
+| MobileNet 0.5 | colab  | 12GB | 17.19 | 1.6.0rc1 | K80 | 24s | |
 | Inception v3 | cs50.io  | 512MB | 14.04.5 | 1.4.1 | Not Compiled | 15m | |
 | Inception v3 | cs50.io  | 512MB | 14.04.5 | 1.2.1 | Compiled | 6m30s | |
 | Inception v3 | floydhub  | 8GB | 16.04.2 | 1.1.0 | Compiled | 4m30s | with install |
