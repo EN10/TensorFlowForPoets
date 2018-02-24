@@ -5,6 +5,18 @@ This can be an much faster (in a few minutes) than training from scratch (Incept
 
 Based on [Tensorflow Retrain](https://www.tensorflow.org/versions/master/tutorials/image_retraining) and [Codelab](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html#0) (updated Dec 6 2017)
 
+### Contents
+
+ [Install Tensorflow](#install-tensorflow)  
+ [Download Flowers](#download-flowers)  
+ [Speedup Training](#speedup-training)  
+ [(Re)Training](#retraining)    
+ [Classifying an Image](#classifying-an-image)  
+ [Training on Your Own Categories](#training-on-your-own-categories)    
+ [Benchmarks](#benchmarks)  
+ [Compiled](#compiled)  
+ [Build from Source](#build-from-source)    
+
 ## Install Tensorflow:
 
     sudo pip install -U pip  
@@ -69,7 +81,7 @@ Download retrain file:
 
 * [(Re)training Inception](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#3)  
 
-## Classifying an image
+## Classifying an Image
 
 Download label_image file:
 
