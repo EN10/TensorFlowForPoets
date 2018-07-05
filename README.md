@@ -5,7 +5,7 @@ This can be an much faster (in a few minutes) than training from scratch (Incept
 
 Based on [Codelab](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html#0) (updated May 30 2018)  
 
-* Updated [Tensorflow Hub Example](https://github.com/EN10/TFHubRetrain) (updated 21 June 2018) 
+* New Updated [Tensorflow Hub Example](https://github.com/EN10/TFHubRetrain) (updated 21 June 2018) 
 
 ### Contents
 
