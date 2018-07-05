@@ -3,9 +3,9 @@
 Retraining one of Google's CNN image classification models to new categories using Transfer Learning.  
 This can be an much faster (in a few minutes) than training from scratch (Inception V3 took Google, 2 weeks).
 
-Based on [Tensorflow Retrain](https://www.tensorflow.org/versions/master/tutorials/image_retraining) and [Codelab](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html#0) (updated Dec 6 2017)  
+Based on [Codelab](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html#0) (updated May 30 2018)  
 
-* [TFHub example](https://github.com/EN10/TFHubRetrain) (updated 30 March 2018) 
+* [TFHub example](https://github.com/EN10/TFHubRetrain) (updated 21 June 2018) 
 
 ### Contents
 
